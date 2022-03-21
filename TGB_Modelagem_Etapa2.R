@@ -434,7 +434,7 @@ g_MOB_1=
   geom_edge_label(size=3)+
   
   geom_node_label(aes(col = splitvar),
-                  line_list = list(aes(label = paste("Nó", id)),
+                  line_list = list(aes(label = paste("NÃ³", id)),
                                    aes(label = splitvar),
                                    aes(label = paste("p =", formatC(p.value, digits = 2)))),
                   # set graphical parameters for each line
@@ -460,7 +460,7 @@ g_MOB_1=
   theme(legend.position = "none") +
   # html_documents seem to cut off a bit too much at the edges so set limits manually
   coord_cartesian(xlim = c(0, 1), ylim = c(-0.1, 1.1))+
-  geom_node_label(aes(label = paste0("Nó ", id," (N = ",nodesize,")")),
+  geom_node_label(aes(label = paste0("NÃ³ ", id," (N = ",nodesize,")")),
                   fontface = "bold",
                   ids = "terminal",
                   size = 2.7,
@@ -604,7 +604,7 @@ g_MOB_1=
   geom_edge_label(size=3)+
   
   geom_node_label(aes(col = splitvar),
-                  line_list = list(aes(label = paste("Nó", id)),
+                  line_list = list(aes(label = paste("NÃ³", id)),
                                    aes(label = splitvar),
                                    aes(label = paste("p =", formatC(p.value, digits = 2)))),
                   # set graphical parameters for each line
@@ -630,7 +630,7 @@ g_MOB_1=
   theme(legend.position = "none") +
   # html_documents seem to cut off a bit too much at the edges so set limits manually
   coord_cartesian(xlim = c(0, 1), ylim = c(-0.1, 1.1))+
-  geom_node_label(aes(label = paste0("Nó ", id," (N = ",nodesize,")")),
+  geom_node_label(aes(label = paste0("NÃ³ ", id," (N = ",nodesize,")")),
                   fontface = "bold",
                   ids = "terminal",
                   size = 2.7,
@@ -823,7 +823,7 @@ g_CART3 =
   geom_edge_label()+
   
   geom_node_label(aes(col = splitvar),
-                  line_list = list(aes(label = paste("Nó", id)),
+                  line_list = list(aes(label = paste("NÃ³", id)),
                                    aes(label = splitvar)),
                   # set graphical parameters for each line
                   line_gpar = list(list(size = 10, col = "black", fontface = "bold"),
@@ -832,12 +832,12 @@ g_CART3 =
   
   coord_cartesian(xlim = c(0, 1), ylim = c(0, 1.1))+
   
-  xlab("Número de aves mortas")+
+  xlab("NÃºmero de aves mortas")+
   
-  geom_node_label(aes(label = paste0("Nó ", id," (N = ",nodesize,")\n \n",
+  geom_node_label(aes(label = paste0("NÃ³ ", id," (N = ",nodesize,")\n \n",
                                      "Q1 = ", CART_3_Q1,"\n",
                                      "Q2 = ", CART_3_Q2,"\n",
-                                     "Média = ", CART_3_Media,"\n",
+                                     "MÃ©dia = ", CART_3_Media,"\n",
                                      "Q3 = ", CART_3_Q3,"\n",
                                      "Sd = ", CART_3_Variancia)),
                   fontface = "bold",
@@ -972,7 +972,7 @@ g_CTREE_1 =
   geom_edge_label()+
   
   geom_node_label(aes(col = splitvar),
-                  line_list = list(aes(label = paste("Nó", id)),
+                  line_list = list(aes(label = paste("NÃ³", id)),
                                    aes(label = splitvar)),
                   # set graphical parameters for each line
                   line_gpar = list(list(size = 13, col = "black", fontface = "bold"),
@@ -981,10 +981,10 @@ g_CTREE_1 =
   
   coord_cartesian(xlim = c(0, 1), ylim = c(0.3, 1.1))+
   
-  geom_node_label(aes(label = paste0("Nó ", id," (N = ",nodesize,")\n \n",
+  geom_node_label(aes(label = paste0("NÃ³ ", id," (N = ",nodesize,")\n \n",
                                      "Q1 = ", CTREE_1_Q1,"\n",
                                      "Q2 = ", CTREE_1_Q2,"\n",
-                                     "Média = ", CTREE_1_Media,"\n",
+                                     "MÃ©dia = ", CTREE_1_Media,"\n",
                                      "Q3 = ", CTREE_1_Q3,"\n",
                                      "Sd = ", CTREE_1_Variancia)),
                   fontface = "bold",
@@ -1184,7 +1184,7 @@ graf_flor_impor =
   theme(axis.text.y = element_text(face="bold", color="black", 
                                    size=15)) +
   labs(title = "", 
-       x = "", y = "Importancia da Variável")
+       x = "", y = "Importancia da VariÃ¡vel")
 
 graf_flor_impor
 
@@ -1310,7 +1310,7 @@ graf_flor_impor =
   theme(axis.text.y = element_text(face="bold", color="black", 
                                    size=15)) +
   labs(title = " ", 
-       x = "", y = "Importancia da Variável")
+       x = "", y = "Importancia da VariÃ¡vel")
 
 graf_flor_impor
 
@@ -1467,8 +1467,8 @@ ggplot(data=xgb_dados_importancia[which(xgb_dados_importancia$rank <= 8),],
         legend.position = "none")+
   theme(axis.text.y = element_text(face="bold", color="black", 
                                    size=15)) +
-  labs(title = "XG Boost - Importância", 
-       x = "", y = "Importância")
+  labs(title = "XG Boost - ImportÃ¢ncia", 
+       x = "", y = "ImportÃ¢ncia")
 
 
 ggsave(filename = "ETAPA1_Mod_XGB1_Importancia.png", 
@@ -1630,8 +1630,8 @@ ggplot(data=xgb_dados_importancia[which(xgb_dados_importancia$rank <= 13),],
         legend.position = "none")+
   theme(axis.text.y = element_text(face="bold", color="black", 
                                    size=15)) +
-  labs(title = "XG Boost - Importância", 
-       x = "", y = "Importância")
+  labs(title = "XG Boost - ImportÃ¢ncia", 
+       x = "", y = "ImportÃ¢ncia")
 
 
 ggsave(filename = "ETAPA1_Mod_XGB2_Importancia.png", 
